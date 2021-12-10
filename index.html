@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!--my style-->
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <!--web icon-->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Propinashe</title>
+</head>
+
+
+
+<body class="container d-flex flex-column align-items-center">
+  <header class="container text-center m-5">
+    <img src="images/logo.svg" class="text-center">
+  </header>
+
+  <!--Contenedor de la calculadora-->
+  <div id="calc-container" class="d-flex p-3">
+
+    <!--Inputs-->
+    <div id="inputs-container" class="m-1">
+
+      <label id="bill-label" class="d-block">Cuenta</label>
+      <div id="bill-container" class="">
+        <img id="usd-icon" class="mb-1 ps-3" src="images/icon-dollar.svg">
+        <input id="billinput" type="number" min="0.01" placeholder="0">
+      </div>
+
+      <label class="mt-4">Seleccione la Propina %</label>
+      <div id="gridContainer" class="grid-container">
+        <div class="radioImputContainer"><input class="radioInput" type="radio" id="tip5" name="radioTip"
+            value="0.05"><label class="radioLabel" for="tip5" onclick="resetCustom()">5%</label></div>
+        <div class="radioImputContainer"><input class="radioInput" type="radio" id="tip10" name="radioTip"
+            value="0.10"><label for="tip10" onclick="resetCustom()">10%</label></div>
+        <div class="radioImputContainer"><input class="radioInput" type="radio" id="tip15" name="radioTip"
+            value="0.15"><label for="tip15" onclick="resetCustom()">15%</label></div>
+        <div class="radioImputContainer"><input class="radioInput" type="radio" id="tip25" name="radioTip"
+            value="0.25"><label for="tip25" onclick="resetCustom()">25%</label></div>
+        <div class="radioImputContainer"><input class="radioInput" type="radio" id="tip50" name="radioTip"
+            value="0.50"><label for="tip50" onclick="resetCustom()">50%</label></div>
+        <div id="custom-container"><input id="custom" type="number" placeholder="Custom"></div>
+      </div>
+
+      <!--Contador de personas-->
+      <div class="ppl-label-container mt-4 d-flex justify-content-between">
+        <label id="ppl-label" class="">Personas</label>
+        <label id="ppl-warning">Mínimo uno</label>
+      </div>
+      <div id="ppl-container" class="">
+        <img id="ppl-icon" class="mb-1 ps-3" src="images/icon-person.svg">
+        <input id="pplinput" type="number" min="1" placeholder="0">
+      </div>
+
+    </div>
+
+
+    <!--Display-->
+    <div id="display-container" class="p-3">
+
+      <div id="prop-disp-container" class="d-flex justify-content-between m-3">
+        <div id="texto-prop" class="d-flex flex-column">
+          <p class="labelDisplay">Propina</p>
+          <p class="xpersona">/persona</p>
+        </div>
+        <p class="resultado" id="propiPorPersona">$0.00</p>
+      </div>
+
+      <div id="total-disp-container" class="d-flex justify-content-between m-3">
+        <div id="texto-total" class="d-flex flex-column">
+          <p class="labelDisplay">Total</p>
+          <p class="xpersona">/persona</p>
+        </div>
+        <p class="resultado" id="totalPersona">$0.00</p>
+      </div>
+
+      <div class="reset-container text-center p-3">
+        <input disabled id="reset" type="reset" class="w-100" onclick="resetAll()">
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
