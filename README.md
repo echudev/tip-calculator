@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: https://echucode.github.io/pricingComponent/
+- Live Site URL: https://echucode.github.io/propinashe/
 
 ### Built with
 
