@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: https://echucode.github.io/propinashe/
+- Live Site URL: https://echucode.github.io/calculadora-propina/
 
 ### Built with
 
