@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: https://echudev.github.io/calculadora-propina/
+- Live Site URL: https://marandae.github.io/tip-calculator/
 
 ### Built with
 
