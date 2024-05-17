@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: https://marandae.github.io/tip-calculator/
+- [Live Site Here!](https://echudev.github.io/tip-calculator/)
 
 ### Built with
 
